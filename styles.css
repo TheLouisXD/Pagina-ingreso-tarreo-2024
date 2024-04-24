@@ -157,3 +157,20 @@ button:active{
         transform: rotate(1turn);
     }
 }
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+footer p{
+    margin: 5px;
+}
