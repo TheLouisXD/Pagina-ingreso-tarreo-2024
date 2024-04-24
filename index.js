@@ -2,10 +2,13 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzS6YT7K1DeKoejuzvPaK
 
 const form = document.forms['form'];
 
+const btn = document.querySelector('.submit');
+
 form.addEventListener('submit', e => {
+    btn.classList.add('button--loading')
     e.preventDefault()
     fetch(scriptURL, {method : 'POST', body: new FormData(form)})
-    .then(Response => alert('Thank you, your form is submited succesfully'))
+    .then(Response => swal("Ingreso con exito", "Los datos han sido enviados", "success"))
     .then(() => {window.location.reload(); })
     .catch(error => console.error('Error', error.message))
 })

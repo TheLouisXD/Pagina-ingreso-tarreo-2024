@@ -101,18 +101,59 @@ input{
 }
 
 button{
-    margin-top: 50px;
+    position: relative;
+    margin-top: 40px;
     width: 100%;
-    background-color: white;
+    background: linear-gradient(to right, blue, #bf23f6);
     color: black;
     height: 45px;
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 button:hover{
     background: linear-gradient(to right,#ff512f, yellow);
     color: white;
+}
+
+button:active{
+    background: rgba(65, 65, 65, 0.5);
+}
+
+.button__text{
+    transition: all 0.2s;
+}
+
+.button--loading .button__text{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.button--loading::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 5px solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from{
+        transform: rotate(0turn);
+    }
+
+    to{
+        transform: rotate(1turn);
+    }
 }
