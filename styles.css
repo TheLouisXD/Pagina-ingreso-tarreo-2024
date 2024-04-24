@@ -5,13 +5,14 @@
 }
 
 body{
-    background-color: #080710;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('https://wallpapercave.com/wp/wp5134857.png');
+    background-blend-mode: darken;
 }
 
 .container{
     width: 430px;
-    height: 520px;
-    border: 1px solid white;
+    height: 580px;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -32,5 +33,86 @@ body{
 }
 
 .circle2{
-    background: linear-gradient(#ff512f, yellow);
+    background: linear-gradient(to right,#ff512f, yellow);
+    right: -80px;
+    bottom: -50px;
+}
+
+form{
+    height: 580px;
+    width: 430px;
+    background-color: rgba(255, 255, 255, 0.07);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 2%;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+form *{
+    color: white;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 42px;
+    font-family: Arial;
+}
+
+form h3 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 300px;
+    font-family: Arial;
+    padding-top: 2px;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500px;
+    font-family: Arial;
+}
+
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 4px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+::placeholder{
+    color: #b7b7b7;
+}
+
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 45px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+button:hover{
+    background: linear-gradient(to right,#ff512f, yellow);
+    color: white;
 }
