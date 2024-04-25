@@ -184,7 +184,7 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.07);
     border-top: 2px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     color: white;
