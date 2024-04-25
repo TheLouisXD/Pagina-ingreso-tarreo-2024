@@ -20,10 +20,10 @@
             </h3>
     
             <label for="Nombre">Nombre</label>
-            <input type="text" placeholder="Ej: Luis Perez" name="Nombre" required oninvalid="this.setCustomValidity('Ingresa tu nombre')" oninput="this.setCustomValidity('')"/>
+            <input type="text" placeholder="Ej: Luis Perez" name="Nombre" minlength="4" required oninvalid="this.setCustomValidity('Ingresa tu nombre')" oninput="this.setCustomValidity('')"/>
     
             <label for="Rut">RUT</label>
-            <input type="text" placeholder="Ej: 12345678-9" name="RUT" required minlength="10" oninput="this.value = this.value.replace(/[^0-9.-]/g, '').replace(/(\..*)\./g, '$1')" oninvalid="this.setCustomValidity('Ingresa tu Rut')" oninput="this.setCustomValidity('')"/> 
+            <input type="text" placeholder="Ej: 12345678-9" name="RUT" required pattern="[0-9]{7,8}-[0-9Kk]" oninvalid="this.setCustomValidity('Ingresa un RUT válido')" oninput="this.setCustomValidity('')"/>
     
             <label for="Correo">Correo</label>
             <input type="email" placeholder="Ej: Luis.Perez@inacapmail.cl" pattern=".+@inacapmail.cl" name="Correo" required oninvalid="this.setCustomValidity('Ingresa tu Correo inacapmail')" oninput="this.setCustomValidity('')"/>
