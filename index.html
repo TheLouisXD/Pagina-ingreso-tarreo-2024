@@ -25,7 +25,7 @@
             <label for="Rut">RUT</label>
             <input type="text" placeholder="Ej: 12345678-9" name="RUT" required maxlength="10" pattern="[0-9]{7,8}-[0-9Kk]" oninvalid="this.setCustomValidity('Ingresa un RUT válido')" oninput="this.setCustomValidity('')"/>
     
-            <label for="Correo">Correo</label>
+            <label for="Correo">Correo<p> (opcional)</p></label>
             <input type="email" placeholder="Ej: Luis.Perez@inacapmail.cl" minlength="1" pattern=".+@inacapmail.cl" name="Correo"/>
     
             <button type="submit" value="Submit" class="submit" id="submit">

@@ -84,10 +84,16 @@ form h3 span{
 
 label{
     display: block;
+    display: inline-block;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500px;
     font-family: Arial;
+}
+
+label p{
+    display: inline;
+    color: #b7b7b7;
 }
 
 input{
@@ -186,6 +192,8 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
+
 
 
 
