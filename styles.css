@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+html{
+    height: -webkit-fill-available;
+}
+
 body{
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url('https://wallpapercave.com/wp/wp5134857.png');
     background-blend-mode: darken;
     height: 100vh;
     display: flex;
+    height: -webkit-fill-available;
 }
 
 .container{
