@@ -20,13 +20,13 @@
             </h3>
     
             <label for="Nombre">Nombre</label>
-            <input type="text" placeholder="Ej: Luis Perez" name="Nombre" required oninvalid="this.setCustomValidity('Ingresa tu nombre')"/>
+            <input type="text" placeholder="Ej: Luis Perez" name="Nombre" required oninvalid="this.setCustomValidity('Ingresa tu nombre')" oninput="this.setCustomValidity('')"/>
     
             <label for="Rut">RUT</label>
-            <input type="text" placeholder="Ej: 12.345.678-9" name="RUT" required oninvalid="this.setCustomValidity('Ingresa tu Rut')"/>
+            <input type="text" placeholder="Ej: 12345678-9" name="RUT" required maxlength="10" oninput="this.value = this.value.replace(/[^0-9. -]/g, '').replace(/(\..*)\./g, '$1')" oninvalid="this.setCustomValidity('Ingresa tu Rut')" oninput="this.setCustomValidity('')"/> 
     
             <label for="Correo">Correo</label>
-            <input type="email" placeholder="Ej: Luis.Perez@inacapmail.cl" pattern=".+@inacapmail.cl" name="Correo" required oninvalid="this.setCustomValidity('Ingresa tu Correo inacapmail')"/>
+            <input type="email" placeholder="Ej: Luis.Perez@inacapmail.cl" pattern=".+@inacapmail.cl" name="Correo" required oninvalid="this.setCustomValidity('Ingresa tu Correo inacapmail')" oninput="this.setCustomValidity('')"/>
     
             <button type="submit" value="Submit" class="submit" id="submit">
                 <span class="button__text">Enviar</span>
