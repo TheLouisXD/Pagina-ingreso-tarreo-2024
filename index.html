@@ -23,7 +23,7 @@
             <input type="text" placeholder="Ej: Luis Perez" name="Nombre" minlength="4" required oninvalid="this.setCustomValidity('Ingresa tu nombre')" oninput="this.setCustomValidity('')"/>
     
             <label for="Rut">RUT</label>
-            <input type="text" placeholder="Ej: 12345678-9" name="RUT" required pattern="[0-9]{7,8}-[0-9Kk]" oninvalid="this.setCustomValidity('Ingresa un RUT válido')" oninput="this.setCustomValidity('')"/>
+            <input type="text" placeholder="Ej: 12345678-9" name="RUT" required maxlength="10" pattern="[0-9]{7,8}-[0-9Kk]" oninvalid="this.setCustomValidity('Ingresa un RUT válido')" oninput="this.setCustomValidity('')"/>
     
             <label for="Correo">Correo</label>
             <input type="email" placeholder="Ej: Luis.Perez@inacapmail.cl" pattern=".+@inacapmail.cl" name="Correo" required oninvalid="this.setCustomValidity('Ingresa tu Correo inacapmail')" oninput="this.setCustomValidity('')"/>
