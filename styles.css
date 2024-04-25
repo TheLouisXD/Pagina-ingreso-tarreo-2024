@@ -4,17 +4,12 @@
     box-sizing: border-box;
 }
 
-html{
-    height: -webkit-fill-available;
-}
 
 body{
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url('https://wallpapercave.com/wp/wp5134857.png');
     background-blend-mode: darken;
-    height: 100vh;
     display: flex;
-    height: -webkit-fill-available;
 }
 
 .container{
@@ -191,4 +186,28 @@ footer{
 
 footer p{
     margin: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+        height: 95vh;
+    }
+    
+    form{
+        height: 580px;
+        width: 390px;
+    }
+
+    .container{
+        width: 250px;
+        height: 580px;
+    }
+    
+    .container .circle1, .circle2{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border-radius: 500%;
+    }
 }
