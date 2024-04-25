@@ -20,13 +20,13 @@
             </h3>
     
             <label for="Nombre">Nombre</label>
-            <input type="text" placeholder="Ej: Luis Perez" name="Nombre">
+            <input type="text" placeholder="Ej: Luis Perez" name="Nombre" required oninvalid="this.setCustomValidity('Ingresa tu nombre')"/>
     
             <label for="Rut">RUT</label>
-            <input type="text" placeholder="Ej: 12.345.678-9" name="RUT">
+            <input type="text" placeholder="Ej: 12.345.678-9" name="RUT" required oninvalid="this.setCustomValidity('Ingresa tu Rut')"/>
     
             <label for="Correo">Correo</label>
-            <input type="text" placeholder="Ej: Luis.Perez@inacapmail.cl" name="Correo">
+            <input type="email" placeholder="Ej: Luis.Perez@inacapmail.cl" pattern=".+@inacapmail\.cl" name="Correo" required oninvalid="this.setCustomValidity('Ingresa tu Correo inacapmail')"/>
     
             <button type="submit" value="Submit" class="submit" id="submit">
                 <span class="button__text">Enviar</span>

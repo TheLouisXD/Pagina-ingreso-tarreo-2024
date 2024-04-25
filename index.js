@@ -11,4 +11,7 @@ form.addEventListener('submit', e => {
     .then(Response => swal("Ingreso con exito", "Los datos han sido enviados", "success"))
     .then(() => {window.location.reload(); })
     .catch(error => console.error('Error', error.message))
+    
 })
+
+

@@ -96,6 +96,14 @@ input{
     font-weight: 300px;
 }
 
+input:invalid {
+    background-color: rgba(255, 255, 255, 0.07);
+    border: none;
+    outline: 2px solid rgb(31, 143, 255);
+    border-radius: 5px;
+}
+
+
 ::placeholder{
     color: #b7b7b7;
 }
